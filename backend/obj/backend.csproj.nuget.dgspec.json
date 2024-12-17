@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Filipe\\Desktop\\Mateus\\Programação\\Projetos\\hack jogo da memoria\\backend\\backend.csproj": {}
+    "C:\\Users\\Filipe\\Desktop\\Mateus\\Programação\\Projetos\\Hack Jogo da Memoria\\backend\\backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Filipe\\Desktop\\Mateus\\Programação\\Projetos\\hack jogo da memoria\\backend\\backend.csproj": {
+    "C:\\Users\\Filipe\\Desktop\\Mateus\\Programação\\Projetos\\Hack Jogo da Memoria\\backend\\backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Filipe\\Desktop\\Mateus\\Programação\\Projetos\\hack jogo da memoria\\backend\\backend.csproj",
+        "projectUniqueName": "C:\\Users\\Filipe\\Desktop\\Mateus\\Programação\\Projetos\\Hack Jogo da Memoria\\backend\\backend.csproj",
         "projectName": "backend",
-        "projectPath": "C:\\Users\\Filipe\\Desktop\\Mateus\\Programação\\Projetos\\hack jogo da memoria\\backend\\backend.csproj",
+        "projectPath": "C:\\Users\\Filipe\\Desktop\\Mateus\\Programação\\Projetos\\Hack Jogo da Memoria\\backend\\backend.csproj",
         "packagesPath": "C:\\Users\\Filipe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Filipe\\Desktop\\Mateus\\Programação\\Projetos\\hack jogo da memoria\\backend\\obj\\",
+        "outputPath": "C:\\Users\\Filipe\\Desktop\\Mateus\\Programação\\Projetos\\Hack Jogo da Memoria\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Filipe\\AppData\\Roaming\\NuGet\\NuGet.Config"

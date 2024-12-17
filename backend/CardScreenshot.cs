@@ -24,6 +24,7 @@ namespace backend
         public void TakeScreenShot()
         {
             // Tira um novo screenshot tendo o width e height de uma carta como atributos
+            // Utilizando resolução 1366 por 768
             Bitmap screenshot = new Bitmap(width: 70, height: 80);
 
             Card card = FindCard();

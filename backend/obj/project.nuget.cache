@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "426iibpfEMhYrj/IP2KuT38AGUerVtufcd/2lS61UDEaBHNZrXVLtlsqQpc/kAJKEEW+KcvGki4vQvzWLfZ7Hg==",
+  "dgSpecHash": "UdmXywRO4ULqa7RwG9pQAuvssCG+UgylitLha6jg0mnT+DVbzo8GxwiLnYqaTOJgoN6yiM0Y0Ru2o3T9HOjDNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Filipe\\Desktop\\Mateus\\Programação\\Projetos\\hack jogo da memoria\\backend\\backend.csproj",
+  "projectFilePath": "C:\\Users\\Filipe\\Desktop\\Mateus\\Programação\\Projetos\\Hack Jogo da Memoria\\backend\\backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Filipe\\.nuget\\packages\\mousekeyhook\\5.7.1\\mousekeyhook.5.7.1.nupkg.sha512"
   ],
