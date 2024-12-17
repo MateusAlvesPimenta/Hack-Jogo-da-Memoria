@@ -12,7 +12,7 @@
 * Back-end / Capturador de imagens
 
 1. .Net 7 instalado e funcionando.
-2. Abrir um CMD na pasta "back-end" e digitar o seguinte comando `dotnet run`
+2. Abrir um CMD na pasta "backend" e digitar o seguinte comando `dotnet run`
 
 * Front-end / Apresentador de imagens
 
