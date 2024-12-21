@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0j5FNw+cndG/NYejqDBqZosLtcbjAZ5JvMn3JNp/6EhQr3Cx8S7UusqypGQuqDw7ESZgJSEx/ZcyFLEtwwe6wQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Filipe\\Desktop\\Mateus\\Programação\\Projetos\\Hack Jogo da Memoria\\CardCapture\\CardCapture.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Filipe\\.nuget\\packages\\mousekeyhook\\5.7.1\\mousekeyhook.5.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
