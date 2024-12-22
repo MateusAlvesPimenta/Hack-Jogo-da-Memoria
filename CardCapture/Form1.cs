@@ -42,11 +42,11 @@ private void GlobalHookMouseDownExt(object sender, MouseEventExtArgs e)
         // Verifica se a tecla Delete foi pressionada 
         if (e.KeyCode == Keys.Delete)
         {
-            for (int y = 0; y <= 4; y++)
+            for (int x = 0; x <= 5; x++)
             {
-                for (int x = 0; x <= 5; x++)
+                for (int y = 0; y <= 4; y++)
                 {
-                    var path = $"../Frontend/public/img/Card{y}{x}.jpg";
+                    var path = $"../Frontend/public/img/Card{x}{y}.jpg";
 
                     if (File.Exists(path))
                     {

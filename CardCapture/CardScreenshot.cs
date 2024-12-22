@@ -38,41 +38,12 @@ public class CardScreenshot
     {
         Card card = new Card();
 
-        // Descobrirá a altura na qual o mouse clicou (Y), após descobrir isso a 
-        // cordenada "StartY" será atualizada devidamente.
-        // "Number" é nada mais nd menos do q YX, sendo Y a linha na qual o mouse clicou
-        // e X a coluna. O tabuleiro do jogo possui 5 cartas de altura e 6 de largura, 
-        // a função deste primeiro filtro é descobrir a linha do clique e atualizar 
+        // Descobrirá a coluna(X) na qual o mouse clicou, após descobrir a 
+        // cordenada "StartX" será atualizada devidamente.
+        // "Number" é nada mais nd menos do q XY, sendo Y a linha na qual o mouse clicou
+        // e X a coluna. O tabuleiro do jogo possui 5 linhas(Y) e 6 colunas, 
+        // a função deste primeiro filtro é descobrir a coluna(X) do clique e atualizar 
         // "Number" devidamente.
-
-        if (_mouseEventArgs.Y <= 218)
-        {
-            card.StartY = 138;
-            card.Number += 0;
-        }
-        else if (_mouseEventArgs.Y >= 224 && _mouseEventArgs.Y <= 304)
-        {
-            card.StartY = 224;
-            card.Number += 1;
-        }
-        else if (_mouseEventArgs.Y >= 310 && _mouseEventArgs.Y <= 390)
-        {
-            card.StartY = 310;
-            card.Number += 2;
-        }
-        else if (_mouseEventArgs.Y >= 396 && _mouseEventArgs.Y <= 476)
-        {
-            card.StartY = 396;
-            card.Number += 3;
-        }
-        else
-        {
-            card.StartY = 482;
-            card.Number += 4;
-        }
-
-        // Mesma função do primeiro filtro, mas este é para achar o "X", 
-        // no caso a coluna que ocorreu o clique
 
         if (_mouseEventArgs.X <= 463)
         {
@@ -103,6 +74,35 @@ public class CardScreenshot
         {
             card.StartX = 763;
             card.Number += 5;
+        }
+
+        // Mesma função do primeiro filtro, mas este é para achar o "Y", 
+        // no caso a altura(Y) que ocorreu o clique
+
+        if (_mouseEventArgs.Y <= 218)
+        {
+            card.StartY = 138;
+            card.Number += 0;
+        }
+        else if (_mouseEventArgs.Y >= 224 && _mouseEventArgs.Y <= 304)
+        {
+            card.StartY = 224;
+            card.Number += 1;
+        }
+        else if (_mouseEventArgs.Y >= 310 && _mouseEventArgs.Y <= 390)
+        {
+            card.StartY = 310;
+            card.Number += 2;
+        }
+        else if (_mouseEventArgs.Y >= 396 && _mouseEventArgs.Y <= 476)
+        {
+            card.StartY = 396;
+            card.Number += 3;
+        }
+        else
+        {
+            card.StartY = 482;
+            card.Number += 4;
         }
 
         return card;

@@ -11,9 +11,9 @@ start /min cmd /k "npm start"
 cd "../CardCapture"
 start /min cmd /k "dotnet run"
 
-@REM :: Inicializa o Backend
-@REM cd "../Backend"
-@REM start /min cmd /k "dotnet run"
+:: Inicializa o Backend
+cd "../Backend"
+start /min cmd /k "dotnet run"
 
 @echo Servicos iniciados com sucesso!
 pause
