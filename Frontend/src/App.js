@@ -21,7 +21,7 @@ function App() {
   return (
     <>
       <Container className="d-grid justify-content-center align-items-center">
-        <Button onClick={deleteCards} color="danger" className="my-4">Delete Cards</Button>
+        <Button onClick={deleteCards} color="danger" className="my-4">Deletar Cartas</Button>
         <Table dark bordered style={{ textAlign: 'center', width: 20 }}>
           <tbody>
             {cards}
