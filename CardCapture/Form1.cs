@@ -13,9 +13,6 @@ public partial class Form1 : Form
         _keyboardMouseEvents = Hook.GlobalEvents();
         _keyboardMouseEvents.MouseDownExt += GlobalHookMouseDownExt;
 
-        KeyPreview = true;
-        KeyDown += new KeyEventHandler(KeyEventHandler);
-
         _textBox.Multiline = true;
         _textBox.Dock = DockStyle.Fill;
         Controls.Add(_textBox);
@@ -35,26 +32,5 @@ private void GlobalHookMouseDownExt(object sender, MouseEventExtArgs e)
         }
 
         _textBox.Text += $"Clique simples ou fora do tabuleiro do mouse em X = {e.X}, Y = {e.Y}" + Environment.NewLine;
-    }
-
-    private void KeyEventHandler(object sender, KeyEventArgs e)
-    {
-        // Verifica se a tecla Delete foi pressionada 
-        if (e.KeyCode == Keys.Delete)
-        {
-            for (int x = 0; x <= 5; x++)
-            {
-                for (int y = 0; y <= 4; y++)
-                {
-                    var path = $"../Frontend/public/img/Card{x}{y}.jpg";
-
-                    if (File.Exists(path))
-                    {
-                        File.Delete(path);
-                    }
-                }
-            }
-            _textBox.Text += "Tecla DELETE pressionada" + Environment.NewLine;
-        }
     }
 }

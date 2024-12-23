@@ -5,9 +5,9 @@ namespace Backend.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class SwitchCards : ControllerBase
+    public class CardsActions : ControllerBase
     {
-        [HttpPost]
+        [HttpPut("/SwitchCards")]
         public IActionResult Switch(Path cardPath)
         {
             var copyPath = $"../Frontend/public/img/Card copy.jpg";
@@ -23,7 +23,7 @@ namespace Backend.Controllers
                 SystemFile.Move(copyPath, path2, true);
                 return Ok();
             }
-            else if (cardPath.path1.Length == 2 && 
+            else if (cardPath.path1.Length == 2 &&
                     cardPath.path2.Length > 2)
             {
                 SystemFile.Copy(path2, copyPath, true);
@@ -31,7 +31,7 @@ namespace Backend.Controllers
                 SystemFile.Copy(nullCard, copyPath, true);
                 SystemFile.Move(copyPath, path2, true);
             }
-            else if(cardPath.path2.Length == 2 &&
+            else if (cardPath.path2.Length == 2 &&
                     cardPath.path1.Length > 2)
             {
                 SystemFile.Copy(path1, copyPath, true);
@@ -41,6 +41,25 @@ namespace Backend.Controllers
             }
 
             return Ok();
+        }
+
+        [HttpDelete("/DeleteCards")]
+        public IActionResult DeleteCards()
+        {
+            for (int x = 0; x <= 5; x++)
+            {
+                for (int y = 0; y <= 4; y++)
+                {
+                    var path = $"../Frontend/public/img/Card{x}{y}.jpg";
+
+                    if (SystemFile.Exists(path))
+                    {
+                        SystemFile.Delete(path);
+                    }
+                }
+            }
+
+            return NoContent();
         }
     }
 
