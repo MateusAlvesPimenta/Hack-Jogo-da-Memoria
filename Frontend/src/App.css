@@ -1,0 +1,10 @@
+body {
+    background-color: darkorange;
+}
+
+img:hover {
+    cursor: pointer;
+}
+.selected-card{
+    border: .2cm solid chartreuse;
+}
