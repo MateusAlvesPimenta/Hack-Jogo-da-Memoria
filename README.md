@@ -17,7 +17,7 @@
 * Front-end / Apresentador de imagens
 
 1. Necessário npm e o node instalados e funcionando.
-2. Abrir um CMD na pasta "image-displayer" e digitar o seguinte comando `npm install` para instalar todas as dependências do projeto.
+2. Abrir um CMD na pasta "Frontend" e digitar o seguinte comando `npm install` para instalar todas as dependências do projeto.
 
 ## Comandos ⌨️​
 * Para abrir o programa basta dar duplo clique no arquivo `Starter.cmd` que ele iniciará toda a aplicação e abrira os 3 CMDs necessários para a aplicação rodar **não feche nenhum dos 3 a menos que você queira encerrar a aplicação**, nesse caso feche os 3.
